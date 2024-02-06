@@ -1,0 +1,205 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="2f2a6039-97b2-44b5-8614-8902cabd839c" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Gravity Books Dws 2</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Book Author</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="34988d84-6d63-40c8-ad46-e23e1b463a8c">
+          <ID>Book Author</ID>
+          <Name>Book Author</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4c6c9299-edfa-4e37-9dec-d0c4b1c59432">
+            <DataSourceViewID>Gravity Books Dws 2</DataSourceViewID>
+            <TableID>dbo_Book_Author</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Control Fact Sales ETL</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="4299092a-d83f-472a-b3b2-11a6da2865aa">
+          <ID>Control Fact Sales ETL</ID>
+          <Name>Control Fact Sales ETL</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="57074cbf-504a-403b-b794-83446ca80b9e">
+            <DataSourceViewID>Gravity Books Dws 2</DataSourceViewID>
+            <TableID>dbo_control_FactSales_ETL</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Customer Address</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="1f1f167e-2f93-4ee3-a3b9-dd75704a4592">
+          <ID>Customer Address</ID>
+          <Name>Customer Address</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e856124a-7c8d-4e20-baac-3a8ad0a8d02f">
+            <DataSourceViewID>Gravity Books Dws 2</DataSourceViewID>
+            <TableID>dbo_Customer_Address</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Author</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="49045fc6-0f5c-4e38-84e0-d7d99d7dba62">
+          <ID>Dim Author</ID>
+          <Name>Dim Author</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="3762de4c-5933-4b23-9c9e-30d42eb1d0e9">
+            <DataSourceViewID>Gravity Books Dws 2</DataSourceViewID>
+            <TableID>dbo_DimAuthor</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Shipping Method</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="25a5fe5f-34bb-4744-8fd5-100da93e22bc">
+          <ID>Dim Shipping Method</ID>
+          <Name>Dim Shipping Method</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="0d7391bf-aee8-4ab4-9cfe-c0f3f8819f5c">
+            <DataSourceViewID>Gravity Books Dws 2</DataSourceViewID>
+            <TableID>dbo_DimShipping_method</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Status</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ec033f65-c6e3-4fa0-a562-a4d143cfde4c">
+          <ID>Dim Status</ID>
+          <Name>Dim Status</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b1cddfe1-28bd-47e4-b7a1-c9493cf96564">
+            <DataSourceViewID>Gravity Books Dws 2</DataSourceViewID>
+            <TableID>dbo_DimStatus</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Order History</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="55b67087-7908-46b5-a85e-a2e835504cd2">
+          <ID>Fact Order History</ID>
+          <Name>Fact Order History</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="abebe58b-ec21-49ee-87b0-16c45389da7a">
+            <DataSourceViewID>Gravity Books Dws 2</DataSourceViewID>
+            <TableID>dbo_Fact_Order_History</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Order Sales</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8b8039b4-1724-478b-bf55-849a76fcfcbb">
+          <ID>Fact Order Sales</ID>
+          <Name>Fact Order Sales</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="650ce426-e67f-4d67-a16b-8166d0ee3f21">
+            <DataSourceViewID>Gravity Books Dws 2</DataSourceViewID>
+            <TableID>dbo_Fact_order_sales</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Last Order Id</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3d3a58b1-f43d-4359-8ba4-9a88c7ce25cf">
+          <ID>Last Order Id</ID>
+          <Name>Last Order Id</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="358e999d-b8c4-462f-a0b6-4eb7540a412e">
+            <DataSourceViewID>Gravity Books Dws 2</DataSourceViewID>
+            <TableID>dbo_last_order_id</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sysdiagrams</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="27e1eab0-d0d4-41ac-9e81-a8ab1661c4c9">
+          <ID>Sysdiagrams</ID>
+          <Name>Sysdiagrams</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="74fb722d-b551-4388-aad0-eada1c397010">
+            <DataSourceViewID>Gravity Books Dws 2</DataSourceViewID>
+            <TableID>dbo_sysdiagrams</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

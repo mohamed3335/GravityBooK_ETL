@@ -1,0 +1,102 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="8f6b5ba8-2eeb-4763-a894-a706ae15f818" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Gravity Books Dws 1</ID>
+  <Name>Gravity Books Dws 1</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Gravity Books Dws</DataSourceID>
+  <Schema>
+    <xs:schema id="Gravity_x0020_Books_x0020_Dws_x0020_1" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Gravity_x0020_Books_x0020_Dws_x0020_1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="abd1572f-b0e6-4cd5-8be6-4342d7a800c1">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DimStatus" msprop:DbTableName="DimStatus" msprop:FriendlyName="DimStatus" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="15cb81e2-babd-4bdd-976a-020df9cb7bab">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Status_SK" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Status_SK" msprop:DbColumnName="Status_SK" msprop:design-time-name="2d54f645-6fa0-48e6-98df-217b0631179b" type="xs:int" />
+                  <xs:element name="StatusID_BK" msprop:FriendlyName="StatusID_BK" msprop:DbColumnName="StatusID_BK" msprop:design-time-name="f841b7ca-c66d-4a36-965b-e459f31895f7" type="xs:int" minOccurs="0" />
+                  <xs:element name="Status_value" msprop:FriendlyName="Status_value" msprop:DbColumnName="Status_value" msprop:design-time-name="217ca817-31d5-4281-bf08-835053529800" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Source_system_code" msprop:FriendlyName="Source_system_code" msprop:DbColumnName="Source_system_code" msprop:design-time-name="0853675b-c86b-460f-b90b-555439082513" type="xs:unsignedByte" minOccurs="0" />
+                  <xs:element name="Start_date" msprop:FriendlyName="Start_date" msprop:DbColumnName="Start_date" msprop:design-time-name="3ba76083-373b-4f3d-bd35-0468b2385f56" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="end_date" msprop:FriendlyName="end_date" msprop:DbColumnName="end_date" msprop:design-time-name="2c218512-f870-4a26-bbc4-70f4186c07c7" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="is_current" msprop:FriendlyName="is_current" msprop:DbColumnName="is_current" msprop:design-time-name="2db764d9-afc5-4369-bda4-0075a3723fac" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fact_Order_History" msprop:DbTableName="Fact_Order_History" msprop:FriendlyName="Fact_Order_History" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="ba73fa9a-5fab-493e-9988-829f5087a28c">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Fact_History_Sk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Fact_History_Sk" msprop:DbColumnName="Fact_History_Sk" msprop:design-time-name="d3d1a11e-035e-4713-a3b9-3a6d126b3578" type="xs:int" />
+                  <xs:element name="orderID_BK" msprop:FriendlyName="orderID_BK" msprop:DbColumnName="orderID_BK" msprop:design-time-name="2b9c46f5-fcf9-44c3-8483-ff971776ae47" type="xs:int" minOccurs="0" />
+                  <xs:element name="History_ID" msprop:FriendlyName="History_ID" msprop:DbColumnName="History_ID" msprop:design-time-name="bab364f3-7124-4a79-a3e1-10d115ab43c4" type="xs:int" minOccurs="0" />
+                  <xs:element name="StatusID_FK" msprop:FriendlyName="StatusID_FK" msprop:DbColumnName="StatusID_FK" msprop:design-time-name="fbdff44e-5c84-44c8-a244-b6c1d54cf9ff" type="xs:int" minOccurs="0" />
+                  <xs:element name="Recived_at_Date_fk" msprop:FriendlyName="Recived_at_Date_fk" msprop:DbColumnName="Recived_at_Date_fk" msprop:design-time-name="0ff9ebe2-5b78-4e95-b9e9-7253d950e4e4" type="xs:int" minOccurs="0" />
+                  <xs:element name="Pending_delivery_at_Date_fk" msprop:FriendlyName="Pending_delivery_at_Date_fk" msprop:DbColumnName="Pending_delivery_at_Date_fk" msprop:design-time-name="cbbcd5c5-2c68-423c-a681-e131742b53f5" type="xs:int" minOccurs="0" />
+                  <xs:element name="Delivery_in_Progress_Date_fk" msprop:FriendlyName="Delivery_in_Progress_Date_fk" msprop:DbColumnName="Delivery_in_Progress_Date_fk" msprop:design-time-name="dc7cbfd2-2f88-407a-b9a4-c00472a1b368" type="xs:int" minOccurs="0" />
+                  <xs:element name="Delivered_at_Date_fk" msprop:FriendlyName="Delivered_at_Date_fk" msprop:DbColumnName="Delivered_at_Date_fk" msprop:design-time-name="80e4af8b-3be8-4485-a75e-e5ddf91ecbee" type="xs:int" minOccurs="0" />
+                  <xs:element name="Returned_at_Date_fk" msprop:FriendlyName="Returned_at_Date_fk" msprop:DbColumnName="Returned_at_Date_fk" msprop:design-time-name="86711929-c2fd-48ad-a303-ba8b18a2384c" type="xs:int" minOccurs="0" />
+                  <xs:element name="Cancelled_at_Date_fk" msprop:FriendlyName="Cancelled_at_Date_fk" msprop:DbColumnName="Cancelled_at_Date_fk" msprop:design-time-name="ccd5d70f-8c68-4071-857a-7fc64388cf95" type="xs:int" minOccurs="0" />
+                  <xs:element name="Created_at" msprop:FriendlyName="Created_at" msprop:DbColumnName="Created_at" msprop:design-time-name="fd4dcc02-81a8-4f9e-a2e1-5685a2f80847" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DimStatus" />
+          <xs:field xpath="Status_SK" />
+        </xs:unique>
+        <xs:unique name="dbo_Fact_Order_History_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact_Order_History" />
+          <xs:field xpath="Fact_History_Sk" />
+        </xs:unique>
+        <xs:keyref name="FK__Fact_Orde__Statu__0C85DE4D" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fact_Order_History" />
+          <xs:field xpath="StatusID_FK" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Gravity_x0020_Books_x0020_Dws_x0020_1 xmlns="" />
+  </Schema>
+</DataSourceView>
